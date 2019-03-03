@@ -760,7 +760,11 @@ GALERÍA
 
 @media only screen and (max-width: 600px) {
 	h1 {
-		font-size: 3em;
+		font-size: 2em;
+	}
+
+	.social {
+		padding-left: 0;
 	}
 
 	.talents {
