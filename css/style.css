@@ -138,14 +138,15 @@ PRESENTACIÓN
 -------------------*/
 
 	h1{
-		width: 400px;
+		max-width: 400px;
+		width: 90%;
 		position: relative;
 		left: 0;
 		top: 15%;
 		color: white;
 		font-weight: 900;
 		padding-left: .5em;
-		font-size: 40px;
+		font-size: 2.5em;
 		text-shadow: 1px 1px 3px rgba(0,0,0,.4)
 	}
 
@@ -758,6 +759,10 @@ GALERÍA
 }
 
 @media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 3em;
+	}
+
 	.talents {
 		margin-top: 240px;
 	}
@@ -808,6 +813,16 @@ GALERÍA
 	.icons {
 		left: 50%;
 		transform: translateX(-50%);
+	}
+
+	.icons li a {
+		width: 45px;
+		height: 45px;;
+	}
+
+	.icons li a .fab {
+		line-height: calc(45px - 12px);
+		font-size: 20px;
 	}
 
 	.footer {
