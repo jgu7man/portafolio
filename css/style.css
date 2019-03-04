@@ -157,7 +157,7 @@ PRESENTACIÓN
 
 	.nombre, .type {
 		position: relative;
-		top: 15%;
+		top: 2vh;
 		color: white;
 		font-weight: bold;
 		padding-left: 3em;
@@ -291,7 +291,8 @@ ABOUT ME
 
 		.talents .card {
 			position: relative;
-			width: 350px;
+			width: 90%;
+			max-width: 350px;
 			margin: 0 auto;
 			background: #333;
 			padding: 20px;
@@ -563,6 +564,40 @@ TIMELINE
 				top:76px !important;
 			}
 
+			@media (max-width: 600px) {
+				.timeline ul li:nth-child(odd),
+				.timeline ul li:nth-child(even) {
+				left:0% !important;
+				text-align: left !important;
+				}
+
+				.timeline ul li:nth-child(odd) .time, 
+				.timeline ul li:nth-child(odd) .time2,
+				.timeline ul li:nth-child(even) .time, 
+				.timeline ul li:nth-child(even) .time2 {
+					position: initial !important;
+					margin: 15px 0 !important;
+
+				}
+
+				.timeline ul li:nth-child(odd)::before,
+				.timeline ul li:nth-child(even)::before {
+					left: 0px !important;
+				}
+
+				.timeline ul li {
+					width: 115% !important;
+				}
+
+				.timeline:before {
+					left: 11%;
+				}
+
+				.timeline ul {
+					top: 3vh;
+				}
+			}
+
 		.popup {
 			width: 100%;
 			height: 100%;
@@ -666,6 +701,9 @@ GALERÍA
 
 .row {
 	padding-bottom: 5em;
+	position: relative;
+	transform: translateX(-50%);
+	left: 50%;
 }
 
 .container .box {
@@ -758,9 +796,28 @@ GALERÍA
 	text-align: center;
 }
 
+@media only screen and (max-width: 320px) {
+	.talents .card {
+		left: -1em;
+		width: 80%;
+	}
+
+	.row {
+		left: 33%;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	h1 {
 		font-size: 2em;
+	}
+
+	.row {
+		left: 40%;
+	}
+
+	.popup img {
+		top: 10%;
 	}
 
 	.social {
@@ -768,7 +825,7 @@ GALERÍA
 	}
 
 	.talents {
-		margin-top: 240px;
+		margin-top: -2em;
 	}
 
 	.timeline {
@@ -819,12 +876,13 @@ GALERÍA
 		transform: translateX(-50%);
 	}
 
-	.icons li a {
+	.social li a {
 		width: 45px;
 		height: 45px;;
 	}
 
-	.icons li a .fab {
+	.social li a .fab,
+	.social li a .far {
 		line-height: calc(45px - 12px);
 		font-size: 20px;
 	}
@@ -835,5 +893,24 @@ GALERÍA
 
 	.footer div {
 		margin-top: 15%;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+
+	.talents {
+		position: relative;
+		top: 6vh;
+	}
+
+	.resumen {
+		top: 20vh;
+	}
+
+}
+
+@media only screen and (min-width: 2000px) {
+	.resumen {
+		top: 15vh;
 	}
 }

@@ -5,6 +5,12 @@ body {
 	margin: 0;
 	padding: 0;	
 	letter-spacing: 1px;
+	height: 100vh;
+}
+
+.body {
+	position: relative;
+	z-index: 5;
 }
 
 section {
@@ -15,7 +21,7 @@ section {
 }
 
 .container {
-	position: absolute;
+	position: relative;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -80,9 +86,10 @@ section {
 
 .back {
 	position: relative;
-	left: 100%;
-	top: 85%;
-	transform: translateX(-50%);
+	left: 50%;
+	top: 33%;
+	width: fit-content;
+	transform: translate(-50%, 100%);
 }
 
 .back a button {
@@ -91,8 +98,8 @@ section {
 	background: #ff8f00;
 	text-align: center;
 	border-radius: 25px;
-	left: 50%;
-	transform: translateX(-50%);
+	/* left: 50%;
+	transform: translateX(-50%); */
 	cursor: pointer;
 	color: #fff;
 	font-weight: 600;
@@ -100,8 +107,8 @@ section {
 }
 
 .footer {
-	position: absolute;
-	bottom: -15%;
+	position: relative;
+	bottom: 5vh;
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -110,16 +117,19 @@ section {
 	background: rgba(0,0,0,0.5);
 	box-sizing: border-box;
 	box-shadow: inset 0 15px 30px rgba(0,0,0,0.5);
+	z-index: 1;
 }
 
 .footer div	{
 	margin: 2% auto 0 auto;
 	text-align: center;
+	position: relative;
+	top: 4vh;
 }
 
 @media (max-width: 600px) {
 	section	{
-		height: 118vh;
+		height: 130vh;
 	}
 	.container	{
 		flex-direction: column;
@@ -127,11 +137,15 @@ section {
 		top: 30%;
 	}
 
+	.back {
+		top: 50%;
+	}
+
 	.container .form-content {
 		width: 100%;
 	}
 
 	.footer {
-		bottom: -28%;
+		bottom: 3vh;
 	}
 }
