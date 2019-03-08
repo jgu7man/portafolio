@@ -252,7 +252,7 @@ ABOUT ME
 
 .about {
 	position: relative;
-	top: 128%;
+	top: 0vh;
 	width: 100%;
 }
 
@@ -636,6 +636,10 @@ TIMELINE
 			color: #ffff00;
 			text-decoration: none;
 			cursor: pointer;
+			position: absolute;
+		    left: 50%;
+			transform: translate(-50%, -50%);
+			top: 90%;
 		}
 
 		.negro {
@@ -789,6 +793,7 @@ GALERÍA
 	color: white;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	bottom: -5%;
 }
 
 .back {
@@ -842,21 +847,65 @@ GALERÍA
 	}
 }
 
+@media only screen and (max-width: 900px) {
+	.talents {
+		display: block;
+		position: relative;
+		top: 15vh;
+	}
+	
+	.talents .card {
+		left: -1em;
+		width: 80%;
+		margin-bottom: 2em;
+	}
+
+	.about {
+		top: -10vh;
+	}
+
+	.hero {
+		background-position-x: 60%;
+	}
+
+	.row {
+		left: 33%;
+	}
+}
+
+@media only screen and (max-height: 500px) {
+	.hero {
+		height: 150vh;
+	}
+}
+
+@media only screen and (max-height: 375px) {
+	.hero {
+		height: 200vh;
+	}
+}
+
 @media only screen and (max-width: 600px) {
+	.hero {
+		background-position-x: 65%;
+	}
+
 	h1 {
-		font-size: 2em;
+		font-size: 3vh;
+		top: 45%;
+	}
+
+	.tagged {
+		top: 45%;
 	}
 
 	.row {
 		left: 40%;
 	}
 
-	.popup img {
-		top: 10%;
-	}
-
 	.social {
 		padding-left: 0;
+		top: 4vh;
 	}
 
 	.talents {
@@ -866,6 +915,10 @@ GALERÍA
 	.timeline {
 		top: 295%;
 	}
+
+	/* .about {
+		top: 10vh
+	} */
 
 	.timeline:before {
 		top: 3%;
@@ -898,7 +951,7 @@ GALERÍA
 	}
 
 	#txt {
-		bottom: 25vh;
+		top: 40vh;
 	}
 
 	.back {
@@ -909,6 +962,7 @@ GALERÍA
 	.icons {
 		left: 50%;
 		transform: translateX(-50%);
+		top: 4vh !important;
 	}
 
 	.social li a {
