@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-   <title>jGu7man - Portafolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-<meta name="description" content="Portafolio de Jorge Gu7mán donde se muestran habilidades, desarrollo profesional y muestras de trabajo reciente">
-<meta name="keywords" content="portafolio,postfolio,psicologo,psicologia,psicología, psicólogo,música,músico,diseño,diseno,design,psychologist,designer,diseñador,ui,ux,teatro,musical,theater">
-<meta name="author" content="Jorge Guzmán">
-<link rel="icon" type="image" href="img/favicon.png">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.toggle-menu').click(function () {
-            $("#menu").toggleClass('active')
+    <title>jGu7man - Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <meta name="description" content="Portafolio de Jorge Gu7mán donde se muestran habilidades, desarrollo profesional y muestras de trabajo reciente">
+    <meta name="keywords" content="portafolio,postfolio,psicologo,psicologia,psicología, psicólogo,música,músico,diseño,diseno,design,psychologist,designer,diseñador,ui,ux,teatro,musical,theater">
+    <meta name="author" content="Jorge Guzmán">
+    <link rel="icon" type="image" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.toggle-menu').click(function() {
+                $("#menu").toggleClass('active')
+            })
         })
-    })
-</script>
+    </script>
 </head>
+
 <body>
 
     <section class="hero2">
@@ -25,174 +27,331 @@
             <a href="index.html" class="header-logo"><img src="img/logoonline.png" height="75px"></a>
             <a class="toggle-menu">Menu</a>
             <ul id="menu">
-                <li><a href="index.html">Acerca de mí</a></li>
-                <li><a href="bio.html">Biografia</a></li>
-                <li><a href="portfolio.html" class="aqui">Portafolio</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="eng.html">Acerca de mí</a></li>
+                <li><a href="bioeng.html">Biografia</a></li>
+                <li><a href="portfolioeng.html" class="aqui">Portafolio</a></li>
+                <li><a href="contacteng.html">Contacto</a></li>
             </ul>
         </header>
     </section>
 
     <!-----------GALERÍA----------------------->
-    
+
     <section id="galeria" class="galeria">
-        <h3 class="gale-title">GALERÍA</h3>
+        <h3 class="gale-title">PORTAFOLIO</h3>
         <p class="gale-subtitle">Algo del trabajo más reciente</p>
         <div class="container">
 
-        <div class="row">
-<!-- PERSONAL BRANDING -->
-            <h3 class="categoria">Personal Branding</h3>
-            <p class="cate-subtitle">Marca personal</p>
+            <div class="row">
+                <!-- WEB DESIGN -->
+                <h3 class="categoria">Web design</h3>
+                <p class="cate-subtitle">Desarrollo y diseño de páginas web con tecnología HTML, CSS, y javascript</p>
 
-            <div id="abby" class="box snake">
-                <img src="img/portfolio/abby.png">
-                <div class="overlay">
-                    <h2>Abigaíl Álvarez</h2>
+                <div id="bassnoise" class="box snake">
+                    <img src="img/portfolio/disenoweb/bassnoise.png">
+                    <div class="overlay">
+                        <h2>bassnoisemusic.com</h2>
+                    </div>
+                </div>
+
+                <div id="accesible" class="box snake">
+                    <img src="img/portfolio/disenoweb/accesible.jpg">
+                    <div class="overlay">
+                        <h2>accesible.com.mx</h2>
+                    </div>
+                </div>
+
+                <div id="marxa" class="box snake">
+                    <img src="img/portfolio/disenoweb/marxa.png">
+                    <div class="overlay">
+                        <h2>marxadigital.com</h2>
+                    </div>
+                </div>
+
+                <div id="casas" class="box snake">
+                    <img src="img/portfolio/disenoweb/casaszmg.jpg">
+                    <div class="overlay">
+                        <h2>casaszmg.com</h2>
+                    </div>
+                </div>
+
+                <div id="pulso" class="box snake">
+                    <img src="img/portfolio/disenoweb/pulso.jpg">
+                    <div class="overlay">
+                        <h2>pulsodigitalcolima.com</h2>
+                    </div>
+                </div>
+
+                <div id="aprende" class="box snake">
+                    <img src="img/portfolio/disenoweb/aprendeaserpadre.png">
+                    <div class="overlay">
+                        <h2>aprendeaserpadre.com</h2>
+                    </div>
+                </div>
+
+                <div id="jgu7man" class="box snake">
+                    <img src="img/portfolio/disenoweb/jguzman.png">
+                    <div class="overlay">
+                        <h2>jgu7man.com</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <!-- APLICACIONES -->
+                <h3 class="categoria">Aplicaciones web</h3>
+                <p class="cate-subtitle">Desarrollo de aplicaciones web con tecnologías Angular, NodeJS, Express y Firebase || Diseñadas con Illustrator y AdobeXD</p>
+
+                <div id="need" class="box snake">
+                    <img src="img/portfolio/apps/needapp.jpg">
+                    <div class="overlay">
+                        <h2>NEED</h2>
+                    </div>
+                </div>
+
+                <div id="moviv" class="box snake">
+                    <img src="img/portfolio/apps/moviv.png">
+                    <div class="overlay">
+                        <h2>moviv</h2>
+                    </div>
+                </div>
+
+                <div id="ofermaps" class="box snake">
+                    <img src="img/portfolio/apps/ofermaps.png">
+                    <div class="overlay">
+                        <h2>ofermaps</h2>
+                    </div>
                 </div>
             </div>
 
-            <div id="martha" class="box snake">
-                <img src="img/portfolio/martha.jpg">
-                <div class="overlay">
-                    <h2>Martha Laura - Psicóloga</h2>
+            <div class="row">
+                <!-- WORDPRESS -->
+                <h3 class="categoria">Sitios Wordpress</h3>
+                <p class="cate-subtitle">Diseño, desarrollo y soporte para sitios wordperss</p>
+
+                <div id="adondevamos" class="box snake">
+                    <img src="img/portfolio/wordpress/adondevamos.png">
+                    <div class="overlay">
+                        <h2>adondevamos.cl</h2>
+                    </div>
+                </div>
+
+                <div id="teloregalo" class="box snake">
+                    <img src="img/portfolio/wordpress/teloregalo.png">
+                    <div class="overlay">
+                        <h2>teloregalo.com.co</h2>
+                    </div>
+                </div>
+
+                <div id="sinapsis" class="box snake">
+                    <img src="img/portfolio/wordpress/sinapsislogo.png">
+                    <div class="overlay">
+                        <h2>sinapsis-ng.org</h2>
+                    </div>
                 </div>
             </div>
 
-            <div id="jguzman" class="box snake">
-                <img src="img/portfolio/jguzman.png">
-                <div class="overlay">
-                    <h2>Jorge Gu7mán</h2>
+            <div class="row">
+                <!-- PERSONAL BRANDING -->
+                <h3 class="categoria">Personal Branding</h3>
+                <p class="cate-subtitle">Diseño de logos e imagen coorporativa</p>
+
+                <div id="abby" class="box snake">
+                    <img src="img/portfolio/personal branding/abby.png">
+                    <div class="overlay">
+                        <h2>Abigaíl Álvarez</h2>
+                    </div>
                 </div>
+
+                <div id="abby2" class="box snake">
+                    <img src="img/portfolio/personal branding/abby2.jpg">
+                    <div class="overlay">
+                        <h2>Abigaíl Álvarez (logo alternativo)</h2>
+                    </div>
+                </div>
+
+                <div id="martha" class="box snake">
+                    <img src="img/portfolio/personal branding/martha.jpg">
+                    <div class="overlay">
+                        <h2>Martha Laura - Psicóloga</h2>
+                    </div>
+                </div>
+
+                <div id="seer" class="box snake">
+                    <img src="img/portfolio/personal branding/LogoSEER.png">
+                    <div class="overlay">
+                        <h2>Instituto SEER</h2>
+                    </div>
+                </div>
+
+                <div id="jguzman" class="box snake">
+                    <img src="img/portfolio/personal branding/jguzman.png">
+                    <div class="overlay">
+                        <h2>Jorge Gu7mán</h2>
+                    </div>
+                </div>
+
             </div>
 
-            <div id="alida" class="box snake">
-                <img src="img/portfolio/alida.png">
-                <div class="overlay">
-                    <h2>Alida Contadora</h2>
+            <div class="row">
+                <!-- SOCIAL NETWORKS -->
+                <h3 class="categoria">Social Networks</h3>
+                <p class="cate-subtitle">Diseño de contenido para redes sociales</p>
+
+                <div id="stormriders" class="box snake">
+                    <img src="img/portfolio/redes/stormriders.jpg">
+                    <div class="overlay">
+                        <h2>Stormriders</h2>
+                    </div>
                 </div>
+
+                <div id="guty" class="box snake">
+                    <img src="img/portfolio/redes/guty.png">
+                    <div class="overlay">
+                        <h2>Guty Mendoza</h2>
+                    </div>
+                </div>
+
+                <div id="mirancho" class="box snake">
+                    <img src="img/portfolio/redes/mirancho.jpg">
+                    <div class="overlay">
+                        <h2>Mi Rancho Antro Bar</h2>
+                    </div>
+                </div>
+
+                <div id="bass" class="box snake">
+                    <img src="img/portfolio/redes/bassnoise.png">
+                    <div class="overlay">
+                        <h2>Bassnoise</h2>
+                    </div>
+                </div>
+
+                <div id="high" class="box snake">
+                    <img src="img/portfolio/redes/high.png">
+                    <div class="overlay">
+                        <h2>Bassnoise - High Album</h2>
+                    </div>
+                </div>
+
+                <div id="bote" class="box snake">
+                    <img src="img/portfolio/redes/boteabote.jpg">
+                    <div class="overlay">
+                        <h2>Bassnoise - Bote a bote Single</h2>
+                    </div>
+                </div>
+
+                <div id="blindaje" class="box snake">
+                    <img src="img/portfolio/redes/blindaje.jpg">
+                    <div class="overlay">
+                        <h2>Blindaje</h2>
+                    </div>
+                </div>
+
+                <div id="inglorius" class="box snake">
+                    <img src="img/portfolio/redes/ingloriusbastards.jpg">
+                    <div class="overlay">
+                        <h2>Inglorius Bastards</h2>
+                    </div>
+                </div>
+
             </div>
 
-        </div>
-        <div class="row">
-<!-- SOCIAL NETWORKS -->
-            <h3 class="categoria">Social Networks</h3>
-            <p class="cate-subtitle">Diseño de contenido para redes sociales</p>
+            <div class="row">
+                <!-- BRANDING -->
+                <h3 class="categoria">Branding</h3>
+                <p class="cate-subtitle">Diseño para marcas y negocios, logos y papelería</p>
 
-            <div id="guty" class="box snake">
-                <img src="img/portfolio/guty.png">
-                <div class="overlay">
-                    <h2>Guty Mendoza</h2>
+                <div id="rennove" class="box snake">
+                    <img src="img/portfolio/branding/rennove.jpg">
+                    <div class="overlay">
+                        <h2>Rennove</h2>
+                    </div>
                 </div>
+
+                <div id="hyip" class="box snake">
+                    <img src="img/portfolio/branding/hyipnewmonitor.jpg">
+                    <div class="overlay">
+                        <h2>HYIP new monitor</h2>
+                    </div>
+                </div>
+
+                <div id="arpegio" class="box snake">
+                    <img src="img/portfolio/branding/arpegio.png">
+                    <div class="overlay">
+                        <h2>Arpegio</h2>
+                    </div>
+                </div>
+
+                <div id="getup" class="box snake">
+                    <img src="img/portfolio/branding/getup.jpg">
+                    <div class="overlay">
+                        <h2>GetUp</h2>
+                    </div>
+                </div>
+
+                <div id="aldo" class="box snake">
+                    <img src="img/portfolio/branding/aldo.jpg">
+                    <div class="overlay">
+                        <h2>Aldo Sushi Boutique</h2>
+                    </div>
+                </div>
+
+                <div id="meson" class="box snake">
+                    <img src="img/portfolio/branding/meson.png">
+                    <div class="overlay">
+                        <h2>Mesón de CERVANTES</h2>
+                    </div>
+                </div>
+
+                <div id="resh" class="box snake">
+                    <img src="img/portfolio/branding/resh.png">
+                    <div class="overlay">
+                        <h2>Resh</h2>
+                    </div>
+                </div>
+
+                <div id="historia" class="box snake">
+                    <img src="img/portfolio/branding/historianortena.png">
+                    <div class="overlay">
+                        <h2>Historia Norteña</h2>
+                    </div>
+                </div>
+
+                <div id="andalus" class="box snake">
+                    <img src="img/portfolio/branding/alandaluz.jpg">
+                    <div class="overlay">
+                        <h2>Al Andalus</h2>
+                    </div>
+                </div>
+
+                <div id="valencia" class="box snake">
+                    <img src="img/portfolio/branding/casavalencia.png">
+                    <div class="overlay">
+                        <h2>Casa Valencia</h2>
+                    </div>
+                </div>
+
+                <div id="abril" class="box snake">
+                    <img src="img/portfolio/branding/abril.jpg">
+                    <div class="overlay">
+                        <h2>Abril Soluciones</h2>
+                    </div>
+                </div>
+                <div id="zin" class="box snake">
+                    <img src="img/portfolio/branding/zin.png">
+                    <div class="overlay">
+                        <h2>Zin - Aprende a ser padre</h2>
+                    </div>
+                </div>
+
             </div>
 
-            <div id="mirancho" class="box snake">
-                <img src="img/portfolio/mirancho.jpg">
-                <div class="overlay">
-                    <h2>Mi Rancho Antro Bar</h2>
-                </div>
-            </div>
 
-            <div id="high" class="box snake">
-                <img src="img/portfolio/high.png">
-                <div class="overlay">
-                    <h2>Bassnoise - High Album</h2>
-                </div>
-            </div>
-
-            <div id="blindaje" class="box snake">
-                <img src="img/portfolio/blindaje.jpg">
-                <div class="overlay">
-                    <h2>Blindaje</h2>
-                </div>
-            </div>
-
-        </div>
-        <div class="row">
-<!-- BRANDING -->
-            <h3 class="categoria">Branding</h3>
-            <p class="cate-subtitle">Diseño para marcas y negocios</p>
-
-            <div id="arpegio" class="box snake">
-                <img src="img/portfolio/arpegio.png">
-                <div class="overlay">
-                    <h2>Arpegio</h2>
-                </div>
-            </div>
-
-            <div id="aldo" class="box snake">
-                <img src="img/portfolio/aldo.jpg">
-                <div class="overlay">
-                    <h2>Aldo Sushi Boutique</h2>
-                </div>
-            </div>
-            
-            <div id="resh" class="box snake">
-                <img src="img/portfolio/resh.png">
-                <div class="overlay">
-                    <h2>Resh</h2>
-                </div>
-            </div>
-
-            <div id="abril" class="box snake">
-                <img src="img/portfolio/abril.jpg">
-                <div class="overlay">
-                    <h2>Abril Soluciones</h2>
-                </div>
-            </div>
-            <div id="zin" class="box snake">
-                <img src="img/portfolio/zin.png">
-                <div class="overlay">
-                    <h2>Zin - Aprende a ser padre</h2>
-                </div>
-            </div>
-
-        </div>
-        <div class="row">
-<!-- WEB DESIGN -->
-            <h3 class="categoria">Web design</h3>
-            <p class="cate-subtitle">Desarrollo de páginas web</p>
-
-            <div id="bassnoise" class="box snake">
-                <img src="img/portfolio/bassnoise.png">
-                <div class="overlay">
-                    <h2>bassnoise.net</h2>
-                </div>
-            </div>
-
-            <div id="marxa" class="box snake">
-                <img src="img/portfolio/marxa.png">
-                <div class="overlay">
-                    <h2>marxadigital.com</h2>
-                </div>
-            </div>
-
-            <div id="pulso" class="box snake">
-                <img src="img/portfolio/pulso.jpg">
-                <div class="overlay">
-                    <h2>pulsodigitalcolima.com</h2>
-                </div>
-            </div>
-
-            <div id="aprende" class="box snake">
-                <img src="img/portfolio/zin.png">
-                <div class="overlay">
-                    <h2>aprendeaserpadre.com</h2>
-                </div>
-            </div>
-
-            <div id="need" class="box snake">
-                <img src="img/portfolio/needapp.jpg">
-                <div class="overlay">
-                    <h2>needapp.com</h2>
-                </div>
-            </div>
-
-        </div>
         </div>
     </section>
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
 
     <section class="footer">
         <ul class="social icons">
@@ -223,11 +382,11 @@
             </li>
         </ul>
         <div>
-            <p>Sitio Creado por <b>Jorge Gu7mán</b> || Colima, Col. 2018</p>
+            <p>Sitio Creado por <b>Jorge Gu7mán</b> || Colima, Col. 2019</p>
         </div>
     </section>
 
-<!-- POP UP -->
+    <!-- POP UP -->
 
     <div class="popup">
         <img class="mockup">
@@ -236,13 +395,14 @@
     </div>
 
 
-        
-        <script src="js/portfolio.js" type="text/javascript"></script>
-        <script src="js/snake.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            $(".snake").snakeify({
-                speed: 200
-            });
-        </script>
+
+    <script src="js/portfolio.js" type="text/javascript"></script>
+    <script src="js/snake.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(".snake").snakeify({
+            speed: 200
+        });
+    </script>
 </body>
+
 </html>
